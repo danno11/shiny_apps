@@ -1,0 +1,8 @@
+name: dist
+account: dan2160coursepack
+server: shinyapps.io
+bundleId: 254125
+url: https://dan2160coursepack.shinyapps.io/dist
+when: 1440795392.26744
+asMultiple: FALSE
+asStatic: FALSE

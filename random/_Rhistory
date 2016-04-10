@@ -1,0 +1,512 @@
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+y<-0
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+y<-0
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+y<-0
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+dkd<-function(){
+y<-0
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+dkd()
+dkd()
+dkd()
+dkd(9)
+dkd(8)
+dkd(7)
+dkd<-function(y){
+y<-0
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+dkd(9)
+dkd(8)
+dkd(7)
+dkd<-function(y){
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+par(new=TRUE)
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+dkd(9)
+dkd(8)
+dkd(7)
+combine<-function(){
+dkd(9)
+dkd(8)
+dkd(7)
+dkd(6)
+dkd(5)
+}
+combine()
+dkd<-function(y){
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+if(ci[1]<=ho&&ci[2]>=0){
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue", add=T)
+}
+else{
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red", add=T)
+}
+}
+}
+combine()
+warnings()
+dkd<-function(y){
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+if(ci[1]<=ho&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+combine()
+combine()
+dkd<-function(){
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+plot(0,0, xlim=c(-2,2), ylim=c(0,10), abline(v=0))
+if(ci[1]<=ho&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+dkd()
+y<-1
+plot(0,0, xlim=c(-2,2), ylim=c(0,12), abline(v=0))
+for (i in 1:9){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+if(ci[1]<=ho&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+rand()<-function(){
+y<-1
+plot(0,0, xlim=c(-2,2), ylim=c(0,12), abline(v=0))
+for (i in 1:10){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+if(ci[1]<=ho&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+rand<-function(){
+y<-1
+plot(0,0, xlim=c(-2,2), ylim=c(0,12), abline(v=0))
+for (i in 1:10){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(.975, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(.975, 9)*(sd(x)/sqrt(10))))
+ho<-0
+y<-y+1
+if(ci[1]<=ho&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="red")
+}
+}
+}
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand()
+rand
+rand
+rand()
+rand()
+rand()
+rand()
+rand()
+source('F:/randomcis.R')
+rand.ci<-function(q){
+y<-0
+par(xaxp=c(1,20,21))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0))
+for (i in 1:10){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.975)
+rand.ci<-function(q){
+y<-0
+par(xaxp=c(1,20,21))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0))
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+rand.ci(.975)
+?xaxp
+par(?xaxp)
+par(xaxp=c(1,20,21))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0))
+rand.ci<-function(q){
+y<-0
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxp=c(1,20,21))
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.975)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n")
+axis(2,at=seq(1,20,1), labels="CI's")
+axis(2,at=seq(1,20,1))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n")
+axis(2,at=seq(1,20,1),adj=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n")
+axis(2,at=seq(1,20,2),adj=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n")
+axis(2,at=seq(2,20,2),adj=1)
+?seq()
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n")
+axis(2,at=seq(2,20))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", adj=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", las=1)
+axis(2,at=seq(2,20))
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", las=1)
+axis(2,at=seq(2,20), las=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", las=1)
+axis(2,at=seq(1,20, 2), las=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", las=1)
+axis(2,at=seq(2,20, 2), las=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0),axis(2, labels = F, tick=F) xaxt="n", las=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), xaxt="n", las=1)
+axis(2, labels = F, tick=F)
+axis(2,at=seq(2,20, 2), las=1)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1)
+rand.ci<-function(q){
+y<-0
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1)
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci(.95)
+rand.ci(.95)
+rand.ci(.95)
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1, xlab="", ylab = "", main = "Confindence Intervals from/n Normal (0,1) Distribution Samples of 10")
+plot(0,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1, xlab="", ylab = "", main = "Confindence Intervals from /nNormal (0,1) Distribution Samples of 10")
+plot(0,1, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1, xlab="", ylab = "", main = "Confindence Intervals from /nNormal (0,1) Distribution Samples of 10")
+rand.ci<-function(q){
+y<-0
+plot(1,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1,xlab="", ylab = "", main = "Random C.I.'s from /nNormal (0,1) Distribution")
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci<-function(q){
+y<-0
+plot(1,0, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1,xlab="", ylab = "")
+title(main = "Confindence Intervals from /nNormal (0,1) Distribution Samples of 10")
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci<-function(q){
+y<-0
+plot(0,1, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1,xlab="", ylab = "")
+title(main = "Confindence Intervals from \nNormal (0,1) Distribution Samples of 10")
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci<-function(q){
+y<-0
+plot(0,1, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1,xlab="", ylab = "")
+title(main = "Confidence Intervals from \nNormal (0,1) Distribution")
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci<-function(q){
+y<-0
+plot(0,1, xlim=c(-2,2), ylim=c(0,21), abline(v=0), las=1,xlab="", ylab = "")
+title(main = "Confidence Intervals \nfrom \nNormal (0,1) Distribution")
+for (i in 1:20){
+x<- rnorm(10)
+ci<-c((mean(x)-qt(q, 9)*(sd(x)/sqrt(10))),
+(mean(x)+qt(q, 9)*(sd(x)/sqrt(10))))
+y<-y+1
+if(ci[1]<=0&&ci[2]>=0){
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="steelblue")
+}
+else{
+par(new=T)
+lines(c(ci[1],ci[2]), c(y,y), lty=1,lwd=3, col="indianred")
+}
+}
+}
+rand.ci(.95)
+rand.ci(.95)
+rand.ci(.95)
+getwd()
+setwd(~/R/random)
+setwd("~/R/random")
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+?actionButton
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shinyapps::deployApp()
+shiny::runApp()
+shiny::runApp()
+q()

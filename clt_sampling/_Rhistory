@@ -1,0 +1,512 @@
+custom.anova<-data.frame(Parameters=c("intercept", "mpg"),
+Estimates=c(summary(a)$coefficient[1,1],
+summary(a)$coefficient[2,1]),
+Standard.Error = c(summary(a)$coefficient[1,2],
+summary(a)$coefficient[2,2]),
+t.Value = c(summary(a)$coefficient[1,3],
+summary(a)$coefficient[2,3]),
+p.Value = signif(c(summary(a)$coefficient[1,4],
+summary(a)$coefficient[2,4])))
+custom.anova
+custom.anova<-data.frame(Parameters=c("intercept", "mpg"),
+Estimates=c(summary(a)$coefficient[1,1],
+summary(a)$coefficient[2,1]),
+Standard.Error = round(c(summary(a)$coefficient[1,2],
+summary(a)$coefficient[2,2]),3),
+t.Value = round(c(summary(a)$coefficient[1,3],
+summary(a)$coefficient[2,3]),3),
+p.Value = signif(c(summary(a)$coefficient[1,4],
+summary(a)$coefficient[2,4])))
+custom.anova
+custom.anova<-data.frame(NULL=c("intercept", "mpg"),
+Estimates=c(summary(a)$coefficient[1,1],
+summary(a)$coefficient[2,1]),
+Standard.Error = round(c(summary(a)$coefficient[1,2],
+summary(a)$coefficient[2,2]),3),
+t.Value = round(c(summary(a)$coefficient[1,3],
+summary(a)$coefficient[2,3]),3),
+p.Value = signif(c(summary(a)$coefficient[1,4],
+summary(a)$coefficient[2,4])))
+custom.anova
+nodata <- data.frame(x= numeric(0), y= integer(0), z = character(0))
+nodata
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+q()
+shiny::runApp('R/regression')
+a<-lm(mtcars$mpg~mtcars$wt)
+summary(a)
+str(summary(a))
+summary(a)$coefficients
+summary(a)$r.squared
+summary(a)$fstatistic
+adj.norm.p<-function(lb,ub,mu,sigma,n){
+if (lb!=0){
+lb<-lb-.5
+} else{
+lb<-0
+}
+if (ub!=n){
+ub<-ub+.5
+}else{
+ub<-n
+}
+adj.norm.p(10,13,11,2,22)
+))
+adj.norm.p<-function(lb,ub,mu,sigma,n){
+if (lb!=0){
+lb<-lb-.5
+} else{
+lb<-0
+}
+if (ub!=n){
+ub<-ub+.5
+}else{
+ub<-n
+}
+}
+adj.norm.p(10,13,11,2,22)
+adj.norm.p<-function(lb,ub,mu,sigma,n){
+if (lb!=0){
+lb<-lb-.5
+} else{
+lb<-0
+}
+if (ub!=n){
+ub<-ub+.5
+}else{
+ub<-n
+}
+pnorm(ub, mu, sigma)-pnorm(lb, mu, sigma)
+}
+adj.norm.p(10,13,11,2,22)
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+A<-matrix(1:9,3,3)
+A
+A<-matrix(1:9,3,3, byrow = T)
+A
+A<-matrix(1:9,3,3)
+B<-matrix(4:15, 4,3)
+C<-matrix(8:10, 3,2)
+MyList<- list(A,B,C)
+MyList
+lapply(MyList, "[", ,2)
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+?lines
+?dnorm
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+shiny::runApp('R/bin.norm')
+?polygon
+shiny::runApp('R/bin.norm')
+install.packages("pander")
+library(pander)
+install.packages(c("base64enc", "boot", "class", "cluster", "codetools", "curl", "dplyr", "foreign", "gridExtra", "httr", "igraph", "KernSmooth", "mapproj", "maps", "MASS", "mgcv", "multcomp", "mvtnorm", "nlme", "packrat", "PKI", "quantmod", "R6", "Rcpp", "RcppEigen", "RCurl", "rJava", "rversions", "shinyjs", "stringi", "TTR", "XML"))
+install.packages(c("base64enc", "boot", "class", "cluster", "codetools",
+?rev
+?digin
+pluri=plura=NULL
+#solutions with two digits
+for (i in 11:99){
+dive=rev(digin(i)[-1])
+if (min(dive)>0){
+dive=sum(dive*10^(0:(length(dive)-1)))
+if (i==((i%/%dive)*dive))
+pluri=c(pluri,i)}}
+for (n in 2:6){ #number of digits
+plura=c(plura,pluri)
+pluro=NULL
+for (j in pluri){
+for (k in (1:9)*10^n){
+x=k+j
+if (x==(x%/%j)*j)
+))
+??digin
+q()
+??digin
+optim=function(n,m){
+outcome=(n<2*m+1)
+if (n>2*m){
+for (i in 1:(2*m))
+outcome=max(outcome,1-optim(n-i,i))
+}
+return(outcome)
+}
+sol=lowa=plura[plura&lt;100]
+?distributions
+runif(10)
+runif(10, min=0, max=10)
+runif(10, min=0, max=10)
+x<-runif(10, min = 0, max = 10)
+hist(x)
+hist(x)
+mean(x)
+plot(x,rep(1,10))
+rep(1,10)
+?rexp
+rexp(10)
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10))
+mean(rexp(10, rate = .2 ))
+?rpois
+?rgamma
+clt.hist<-function(dist, n){
+n<-input$n
+dist<-2
+}
+?rexp
+?runif
+?rnorm
+?rpois
+?rgamma
+rgamma(n=4)
+rgamma(n=6, shape=3)
+plot(rgamma(n=6, shape=3))
+plot(rgamma(n=6, shape=3))
+plot(rgamma(n=6, shape=3))
+?rpois
+plot(function(x) dpois(x, lambda = 2))
+plot(function(x) dpois(x, lambda = 2), 0, 5, xlim = c(0, 5))
+plot(function(x) dexp(x), 0, 5, xlim = c(0, 5))
+plot(function(x) dexp(x, rate=.25), 0,4, xlim = c(0, 4))
+plot(function(x) dexp(x, rate=.25), 0,20, xlim = c(0, 20))
+plot(function(x) dexp(x, rate=.25), 0,100, xlim = c(0, 100))
+plot(function(x) dexp(x, rate=.25), 0,30, xlim = c(0, 30))
+plot(function(x) dexp(x, rate=.25), 0,30, xlim = c(0, 30), las=1)
+points(4, dexp(4,rate = .25))
+plot(function(x) dexp(x, rate=1), 0,30, xlim = c(0, 30), las=1)
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=1), 0,20, xlim = c(0, 20), las=1)
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=1), 0,10, xlim = c(0, 10), las=1)
+points(4, dexp(4,rate = 1))
+?Exponential
+plot(function(x) dexp(x, rate=1), 0,10, xlim = c(0, 10), las=1)
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=1.5), 0,10, xlim = c(0, 10), las=1, ylab = "P(x)")
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=1.5), 0,10, xlim = c(0, 10), las=1, ylab = "P(x)")
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1, ylab = "P(x)")
+points(4, dexp(4,rate = 1))
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1, ylab = "P(x)")
+points(2, dexp(2,rate = .5))
+main = "dfkj"
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1, ylab = "P(x)")
+points(2, dexp(2,rate = .5))
+main = "dfkj"
+points(2, dexp(2,rate = .5), pch = 12)
+points(2, dexp(2,rate = .5), pch = 19)
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1,
+ylab = "P(x)", xlab = "", )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+par(bg="cyan")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+par(bg="grey99")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+par(bg="grey88")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 10), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+plot(function(x) dexp(x, rate=.5), 0,10, xlim = c(0, 15), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+plot(function(x) dexp(x, rate=.5), 0,15, xlim = c(0, 15), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Exponential Distribution \nmu=2" )
+points(2, dexp(2,rate = .5), pch = 19, col = "purple")
+par(bg="grey88")
+plot(function(x) dunif(x, min = 0, max = 4), 0,4, xlim = c(0, 4), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Population: Uniform Distribution \nmu=2" )
+points(2, dunif(2, min = 0, max = 4), pch = 19, col = "purple")
+par(bg="grey88")
+plot(function(x) dunif(x, min = 1, max = 3), 0,4, xlim = c(0, 4), las=1,
+ylab = "P(x)", xlab = "", lwd = 2, main = "Population: Uniform Distribution \nmu=2" )
+points(2, dunif(2, min = 0, max = 4), pch = 19, col = "purple")
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar<-mean(x)
+}
+hist(xbar)
+}
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar<-mean(x)
+}
+xbar
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar)
+xbar
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, bins=20)
+?hist
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = n)
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 20)
+for (i in 1:20){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+xbar
+for (i in 1:20){
+x<-rexp(100, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(100, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 6)
+for (i in 1:20){
+x<-rexp(100, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+xbar
+hist(xbar)
+hist(xbar[i],xbar)
+?hist
+hist(xbar)
+for (i in 1:100){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:50){
+x<-rexp(10, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:50){
+x<-rexp(1000, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(1000, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+xbar
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar<-mean(x)
+}
+hist(xbar, breaks = 10)
+xbar
+x
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+xbar
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(50, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(100, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(100000, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+for (i in 1:20){
+x<-rexp(5, .25)
+xbar[i]<-mean(x)
+}
+hist(xbar, breaks = 10)
+qplot(xbar, geom = histogram)
+library(ggplot2)
+qplot(xbar, geom = histogram)
+qplot(xbar, geom = "histogram")
+qplot(xbar, geom = "histogram", binwidth = .5)
+xbar
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+rexp(5, rate = .25)
+shiny::runApp('R/clt_sampling')
+?eval
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?eval
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?hist
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?rexp
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+q()
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+xbar
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+dice_results <- c(1,3,2,4,5,6,5,3,2,1,6,2,6,5,6,4,1,3,2,4,6,4,1,6,3,2,4,3,4,5,6,7,1)
+ggplot() + aes(dice_results)+ geom_histogram(binwidth=1, colour="black", fill="white")
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?data.frame
+?qplot
+?aes
+?geom_histogram
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?qplot
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+q()
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+myFunc <- function() {
+result = c((mean(xbar)-qt(.975, 19)*(sd(xbar)/sqrt(20))),
+(mean(xbar)+qt(.975, 19)*(sd(xbar)/sqrt(20))))
+names(result) = c("xmin", "xmax")
+result
+}
+myFunc()
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?dexp
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+?dunif
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shiny::runApp('R/clt_sampling')
+shinyapps::setAccountInfo(name='dan2160coursepack', token='12D883C9B057F6078BE00C807CA79A4E', secret='JLddJDa01oklISwSIDf04EEsALmLFVIARLCZcMZz')
+getwd()
+setwd("~/R/clt_sampling")
+shinyapps::deployApp()
+q()

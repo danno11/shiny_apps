@@ -1,0 +1,512 @@
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=0.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+windows(width=5,height=4,pointsize=10)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='treatment group',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+windows(width=5,height=4,pointsize=10)
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 33.18;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=0.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 33.18;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.01;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88 );
+sigma <- 33.18;
+n <- c(13, 11, 10);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:3)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88 );
+sigma <- 33.18;
+n <- c(13, 11, 10);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:3,n)
+xlim <- c(0,6);
+windows(width=7,height=7,pointsize=12)
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:3)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 1;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.01;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+### Figure on Page C.3
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 1;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-3,3,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 1;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-10,25,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+mu <- 75.18; alpha <- c(-7.82,16.91,-2.88, 11.82,23.55 );
+sigma <- 33;
+n <- c(13, 11, 10, 10, 16);
+pad <- 0.05;
+npoints <- 101
+y <- mu + rep(alpha,n) + rnorm(sum(n), 0, sigma)
+x <- rep(1:5,n)
+xlim <- c(0,6);
+ylim <- min(y) + c(-0.2,1.2)*(max(y)-min(y))
+windows(width=7,height=7,pointsize=12)
+plot(  x,y, xlim=xlim, xaxt="n", ylim=ylim, yaxt="n",
+xlab='shop_type',pch=21,ylab='',bg=rgb(0,0.75,0,0.3),
+main="One-Way ANOVA Model with Samples" )
+axis(1, at=1:5)
+box()
+mtext( side=3, line=0.3, text='(k = 5)' )
+mtext( side=2, line=1.5, text='startup cost' )
+abline(h=mu,lty=3,col='red')
+text(par('usr')[1], mu, pos=4,
+labels=expression(mu))
+y <- sigma * seq(-10,25,length=npoints)
+x <- dnorm(y, 0, sigma) + pad
+par(xpd=NA)
+for(j in 1:5) {
+lines(-x+j, y+mu+alpha[j], col='blue', lwd=2)
+segments(j-pad, y[1]+mu+alpha[j],
+j-pad, y[npoints]+mu+alpha[j], col=rgb(0,0,0.75,0.3))
+segments(j-pad, mu+alpha[j],
+-dnorm(0,0,sigma)+j-pad, mu+alpha[j], col='blue', lty=3,lwd=0)
+text( -dnorm(0,0,sigma)+j-pad, mu+alpha[j], pos=2, offset=.2,
+labels=as.expression(  substitute( mu[a]==mu+alpha[a],
+list(a=j) )  )    )
+}
+shiny::runApp('R/breanna')
+shiny::runApp('R/breanna')
+?text
+shiny::runApp('R/breanna')
+shiny::runApp('R/breanna')
+?set.seed
+shiny::runApp('R/breanna')
+q()
+install.packages("htmlwidgets")
+library(htmlwidgets)
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+anscombe
+par(mfrow(2,2))
+?mfrow
+??mfrow
+par(mfrow(c(2,2)))
+par(mfrow=c(2,2))
+plot(y1~x1, y2~x2, y3~x3, y4~x4)
+windows(5,5)
+par(mfrow=c(2,2))
+plot(y1~x1)
+source('~/.active-rstudio-document')
+source('~/.active-rstudio-document')
+source('~/.active-rstudio-document')
+ggplot(anscombe, aes(x1, y1)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE, shape = 21, color = "black")
+ggplot(anscombe, aes(x1, y1)) + geom_point() +
+geom_smooth(method = lm, fullrange = F , shape = 21, color = "black")
+shiny::runApp('R/regression')
+?summary
+shiny::runApp('R/regression')
+q()
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+?xor
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+q()
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+?nearPoints
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+shiny::runApp('R/regression')
+?geom_text
+p <- ggplot(mtcars, aes(x=wt, y=mpg, label=rownames(mtcars)))
+p + geom_text()
+p + geom_text(aes(label = paste(wt, "^(", cyl, ")", sep = "")),
+parse = TRUE)
+keep
+shiny::runApp('R/regression')
+getwd()
+setwd("~/R/helpp")
+shiny::runApp()
+setwd("C:/Users/Dan/Documents/R/regression")
+shiny::runApp()
+?xor
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+shinyapps::setAccountInfo(name='dan2160coursepack', token='AAF54AF30EA363AE39B75C1E15F3EC5B', secret='UT9xWZSTRDuG0zF7LxqI7+zJR/OkcCaQzD1JEfhA')
+shinyapps::deployApp()
+install.packages("BH")
+library(BH)
+shinyapps::deployApp()
+shiny::runApp()
+shiny::runApp()
+head(mtcars)
+a<-lm(mpg~wt, data=mtcars)
+a
+summary(a)
+a$coefficients
+a$terms
+a$effects
+a$qr
+str(mtcars)
+shiny::runApp()
+shiny::runApp()
+shiny::runApp()
+par(mfrow = c(2,2))
+?mfrow
+??mfrow
+windows(5,5)
+par(mfrow=c(2,2))
+plot(y1~x1, data = anscombe, lty=lm)
+plot(y2~x2,data = anscombe)
+plot(y3~x3, data = anscombe)
+plot(y4~x4, data = anscombe)
+plot(y1~x1, data = anscombe)
+plot(y2~x2,data = anscombe)
+plot(y3~x3, data = anscombe)
+plot(y4~x4, data = anscombe)
+windows(5,5)
+par(mfrow=c(2,2), pch=19)
+plot(y1~x1, data = anscombe)
+plot(y2~x2,data = anscombe)
+plot(y3~x3, data = anscombe)
+plot(y4~x4, data = anscombe)
+par(mfrow=c(2,2), pch=19, col = "darkgreen")
+plot(y1~x1, data = anscombe)
+plot(y2~x2,data = anscombe)
+plot(y3~x3, data = anscombe)
+plot(y4~x4, data = anscombe)
+windows(5,5)
+par(mfrow = c(2,2))
+ggplot(anscombe, aes(x1, y1)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+ggplot(anscombe, aes(x2, y2)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+ggplot(anscombe, aes(x3, y3)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+ggplot(anscombe, aes(x4, y4)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+ggplot(anscombe, aes(x1, y1)) + geom_point(color="firebrick") +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+library(gridExtra)
+install.packages("gridExtra")
+library(gridExtra)
+grid.arrange(p1,p2, p4, p3, ncol=2)
+p1<-ggplot(anscombe, aes(x1, y1)) + geom_point(color="firebrick") +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+p2<-ggplot(anscombe, aes(x2, y2)) + geom_point(color="olivedrab") +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+p3<-ggplot(anscombe, aes(x3, y3)) + geom_point(color="firebrick") +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+p4<-ggplot(anscombe, aes(x4, y4)) + geom_point(color="olivedrab") +
+geom_smooth(method = lm, fullrange = TRUE , shape = 21, color = "black")
+grid.arrange(p1,p2, p4, p3, ncol=2)
+getwd()
+str(mtcars)
+mtcars$cyl<-factor(mtcars$cyl)
+str(mtcars)
+ggplot(mtcars, aes_string(cyl, wt)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE, shape = 21, color = "black") +
+geom_point(data = exclude, shape = 21, fill = NA, color = "black", alpha = 0.25)
+ggplot(mtcars, aes(cyl, wt)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE, shape = 21, color = "black") +
+geom_point(data = exclude, shape = 21, fill = NA, color = "black", alpha = 0.25)
+ggplot(mtcars, aes(cyl, wt)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE, shape = 21, color = "black") +
+)
+ggplot(mtcars, aes(cyl, wt)) + geom_point() +
+geom_smooth(method = lm, fullrange = TRUE, shape = 21, color = "black")
+str(mtcars)
+summary(lm(wt~cyl, data = mtcars))
+shiny::runApp()
+?mtcars
+shiny::runApp()
+q()
